@@ -38,7 +38,7 @@ class Scraper
     # The return value should be a hash in which the key/value pairs describe an individual student
 
     profile = Nokogiri::HTML(open(profile_url))
-    hash_socials = []
+    hash_socials = {}}
 
     #length of 1; whole container
     icon_section = profile.css("div.social-icon-container")
