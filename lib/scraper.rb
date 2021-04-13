@@ -55,7 +55,7 @@ class Scraper
                 # :github =>
                 # :blog =>
                 # :profile_quote =>
-                # :bio =>
+                 :bio => profile.css("div.description-holder.p")
               #end
           }
         end
