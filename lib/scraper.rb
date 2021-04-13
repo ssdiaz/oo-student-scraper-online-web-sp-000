@@ -29,7 +29,7 @@ class Scraper
 
      #return the array
      students
- binding.pry
+     # binding.pry
   end
 
 
