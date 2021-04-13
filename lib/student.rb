@@ -11,10 +11,18 @@ class Student
   def self.create_from_collection(students_array)
     # iterates over the array of hashes and creates a new indiv student using each hash
     students_array.each do |student|
-
-
+      Student.new(attributes_hash)
     end
   end
+
+  # [1] pry(Scraper)> students
+  # => [{:name=>"Ryan Johnson",
+  #   :location=>"New York, NY",
+  #   :profile_url=>"students/ryan-johnson.html"},
+  #  {:name=>"Eric Chu",
+  #   :location=>"Glenelg, MD",
+  #   :profile_url=>"students/eric-chu.html"},
+
 
   def add_student_attributes(attributes_hash)
 
