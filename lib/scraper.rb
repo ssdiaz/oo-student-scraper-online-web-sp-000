@@ -51,6 +51,8 @@ class Scraper
            hash_socials[:twitter] = icon.attribute("href").text
          elsif icon.attribute("href").text.include?("linkedin")
            hash_socials[:linkedin] = icon.attribute("href").text
+         elsif icon.attribute("href").text.include?("github")
+           hash_socials[:github] = icon.attribute("href").text
          end
        end
         binding.pry
