@@ -18,15 +18,6 @@ class Student
     end
   end
 
-  # [1] pry(Scraper)> students
-  # => [{:name=>"Ryan Johnson",
-  #   :location=>"New York, NY",
-  #   :profile_url=>"students/ryan-johnson.html"},
-  #  {:name=>"Eric Chu",
-  #   :location=>"Glenelg, MD",
-  #   :profile_url=>"students/eric-chu.html"},
-
-
   def add_student_attributes(attributes_hash)
     binding.pry
   end
