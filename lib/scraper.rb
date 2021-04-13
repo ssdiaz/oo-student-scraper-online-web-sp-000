@@ -51,7 +51,7 @@ class Scraper
             {
               #if profile.css("div.social-icon-container a").attribute("href").text.include?("twitter")
                 :twitter => icon.attribute("href").text,
-                :linkedin => icon.attribute("href").text
+                :linkedin => icon.attribute("href").text,
                 # :github =>
                 # :blog =>
                 # :profile_quote =>
