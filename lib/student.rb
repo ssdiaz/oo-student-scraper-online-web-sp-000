@@ -36,6 +36,7 @@ class Student
     attributes_hash.each do |key,value|
       self.send("#{key.to_s}s=",value)
     end
+    binding.pry
   end
 
   def self.all
