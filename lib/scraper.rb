@@ -56,10 +56,10 @@ class Scraper
          end
          hash_socials[:bio] = profile.css("div.description-holder p").text
          hash_socials[:profile_quote] = profile.css("div.profile-quote").text
-         hash_socials[:blog] = 
+         hash_socials[:blog] =
        end
         binding.pry
-        
+
     #hash_socials
   end
 
