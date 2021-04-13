@@ -52,7 +52,7 @@ class Scraper
          end
 
 
-         hash_socials << :twitter
+        # hash_socials << :twitter
         #
         #     {
         #       #if profile.css("div.social-icon-container a").attribute("href").text.include?("twitter")
@@ -64,7 +64,6 @@ class Scraper
         #          :bio => profile.css("div.description-holder p").text
         #       #end
         #   }
-            binding.pry
          end
     # #      :twitter => icon.css("div.social-icon-container a").attribute("href").text
     # #             # profile.css(".social-icon").attribute("src").text
