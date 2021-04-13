@@ -54,38 +54,16 @@ class Scraper
          elsif icon.attribute("href").text.include?("github")
            hash_socials[:github] = icon.attribute("href").text
          end
+         profile.css("div.description-holder p").text
        end
         binding.pry
-# hash_socials[:twitter] = icons_per_page.attribute("href").text
-        # hash_socials << :twitter
-        #
-        #     {
-        #       #if profile.css("div.social-icon-container a").attribute("href").text.include?("twitter")
-        #         :twitter => icon.attribute("href").text,
-        #         :linkedin => icon.attribute("href").text,
-        #         # :github =>
-        #         # :blog =>
-        #         # :profile_quote =>
-        #          :bio => profile.css("div.description-holder p").text
-        #       #end
-        #   }
-      #   end
-    # #      :twitter => icon.css("div.social-icon-container a").attribute("href").text
-    # #             # profile.css(".social-icon").attribute("src").text
-    # #             # profile.css("div.social-icon-container a").attribute("href").text.include?("twitter")
-    # #  gives tru # profile.css("div.social-icon-container a").attribute("href").text.include?("twitter")
-    #
-    # # #     :linkedin =>
-    # # #     :github =>
-    # # #     :bog =>
-    # # #     :profile_quote =>
-    # # #     :bio =>
-    # #
-    #     }
-    #  end
-     #binding.pry
+
+    #       :blog =>
+    #       :profile_quote =>
+    #       :bio => profile.css("div.description-holder p").text
+
     #hash_socials
-    #binding.pry
+
   end
 
 end
