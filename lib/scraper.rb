@@ -50,7 +50,7 @@ class Scraper
          if ___ .include?("twitter")
            hash_socials[:twitter] = icon.attribute("href").text
          end
-
+binding.pry
 
         # hash_socials << :twitter
         #
@@ -80,7 +80,7 @@ class Scraper
     #  end
      #binding.pry
     #hash_socials
-    binding.pry
+    #binding.pry
   end
 
 end
