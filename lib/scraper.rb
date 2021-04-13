@@ -20,11 +20,12 @@ class Scraper
 
     #scraping the section and adding student hash into array
      student_cards.each do |student|
-       students <<  {
+       attributes =  {
           :name => student.css("h4.student-name").text,
           :location => student.css("p.student-location").text,
           :profile_url => student.css("a").attribute("href").text,
         }
+        students << attributes
      end
 
      #return the array
