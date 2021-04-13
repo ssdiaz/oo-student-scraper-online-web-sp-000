@@ -81,7 +81,7 @@ class Scraper
     #  end
      #binding.pry
     #hash_socials
-    #binding.pry
+    binding.pry
   end
 
 end
