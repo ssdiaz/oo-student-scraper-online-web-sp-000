@@ -50,8 +50,8 @@ class Scraper
          hash_socials <<
             {
               #if profile.css("div.social-icon-container a").attribute("href").text.include?("twitter")
-                :twitter => icon_section.css("a").attribute("href").text
-                #:linkedin => icon_section.css("a").attribute("href").text
+                :twitter => icon_section.css("a").attribute("href").text,
+                :linkedin => icon_section.css("a").attribute("href").text
                 # :github =>
                 # :blog =>
                 # :profile_quote =>
