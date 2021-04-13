@@ -32,7 +32,6 @@ class Student
   # "}
 
   def add_student_attributes(attributes_hash)
-    binding.pry
     attributes_hash.each do |key,value|
       self.send("#{key.to_s}s=",value)
     end
