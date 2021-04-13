@@ -15,6 +15,7 @@ class Student
     # iterates over the array of hashes and creates a new indiv student using each hash
     students_array.each do |student|
       Student.new(nattributes)
+      binding.pry
     end
   end
 
