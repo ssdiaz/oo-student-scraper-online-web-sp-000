@@ -64,6 +64,7 @@ class Scraper
         #          :bio => profile.css("div.description-holder p").text
         #       #end
         #   }
+            binding.pry
          end
     # #      :twitter => icon.css("div.social-icon-container a").attribute("href").text
     # #             # profile.css(".social-icon").attribute("src").text
@@ -80,7 +81,7 @@ class Scraper
     #  end
      #binding.pry
     #hash_socials
-    binding.pry
+    #binding.pry
   end
 
 end
