@@ -55,12 +55,12 @@ class Scraper
            hash_socials[:github] = icon.attribute("href").text
          end
          hash_socials[:bio] = profile.css("div.description-holder p").text
+         hash_socials[:profile_quote] = profile.css("div.profile-quote").text.gsub("\",)
        end
         binding.pry
 
     #       :blog =>
     #       :profile_quote =>
-    #       :bio => profile.css("div.description-holder p").text
 
     #hash_socials
 
