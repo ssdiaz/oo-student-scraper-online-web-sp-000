@@ -64,7 +64,7 @@ class Scraper
         #          :bio => profile.css("div.description-holder p").text
         #       #end
         #   }
-        # end
+         end
     # #      :twitter => icon.css("div.social-icon-container a").attribute("href").text
     # #             # profile.css(".social-icon").attribute("src").text
     # #             # profile.css("div.social-icon-container a").attribute("href").text.include?("twitter")
