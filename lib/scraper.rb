@@ -58,7 +58,7 @@ class Scraper
          hash_socials[:bio] = profile.css("div.description-holder p").text
          hash_socials[:profile_quote] = profile.css("div.profile-quote").text
        end
-        binding.pry
+      #  binding.pry
 
     hash_socials
   end
