@@ -53,10 +53,11 @@ class Scraper
            hash_socials[:linkedin] = icon.attribute("href").text
          elsif icon.attribute("href").text.include?("github")
            hash_socials[:github] = icon.attribute("href").text
+         elsif icon.attribute("href").text.include?(".com")
+           hash_socials[:blog] = icon.attribute("href").text
          end
          hash_socials[:bio] = profile.css("div.description-holder p").text
          hash_socials[:profile_quote] = profile.css("div.profile-quote").text
-         hash_socials[:blog] =
        end
         binding.pry
 
