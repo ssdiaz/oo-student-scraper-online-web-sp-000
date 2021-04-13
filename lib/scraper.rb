@@ -49,9 +49,9 @@ class Scraper
        icons_per_page.each do |icon|
          hash_socials <<
             {
-              if profile.css("div.social-icon-container a").attribute("href").text.include?("twitter")
+              #if profile.css("div.social-icon-container a").attribute("href").text.include?("twitter")
                 :twitter => icon_section.css("a").attribute("href").text
-              end
+              #end
           }
         end
     # #      :twitter => icon.css("div.social-icon-container a").attribute("href").text
