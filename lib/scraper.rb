@@ -49,6 +49,7 @@ class Scraper
        icons_per_page.each do |icon|
          if ___ .include?("twitter")
            hash_socials[:twitter] = icon.attribute("href").text
+           binding.pry
          end
 binding.pry
 
