@@ -54,7 +54,7 @@ class Scraper
          elsif icon.attribute("href").text.include?("github")
            hash_socials[:github] = icon.attribute("href").text
          end
-         :bio => profile.css("div.description-holder p").text
+         hash_socials[:bio] = profile.css("div.description-holder p").text
        end
         binding.pry
 
