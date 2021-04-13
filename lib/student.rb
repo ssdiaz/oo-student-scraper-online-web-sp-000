@@ -14,7 +14,7 @@ class Student
   def self.create_from_collection(students_array)
     # iterates over the array of hashes and creates a new indiv student using each hash
     students_array.each do |student|
-      Student.new(nattributes)
+    #  Student.new(nattributes)
     end
           binding.pry
   end
