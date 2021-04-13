@@ -43,8 +43,7 @@ class Scraper
     #length of 1; whole container
     icon_section = profile.css("div.social-icon-container")
     #length of 4; per person
-    #icons_per_page = profile.css("img.social-icon")
-    icons_per_page = icon_section.css("a")
+    icons_per_page = icon_section.css("a")   #icons_per_page = profile.css("img.social-icon")
 
        icons_per_page.each do |icon|
          if icon.attribute("href").text.include?("twitter")
