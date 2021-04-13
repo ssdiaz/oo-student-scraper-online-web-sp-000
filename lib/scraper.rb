@@ -51,9 +51,6 @@ class Scraper
            hash_socials[:twitter] = icon.attribute("href").text
          if icon.attribute("href").text.include?("linkedin")
            hash_socials[:linkedin] = icon.attribute("href").text
-
-
-
          end
        end
         binding.pry
